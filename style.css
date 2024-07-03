@@ -106,9 +106,10 @@ main {
   }
   
   footer {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     color: hsl(218, 20%, 35%);
+    padding: 1rem;
   }
 
   footer a {
