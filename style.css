@@ -4,70 +4,78 @@
     margin: 0;
     padding: 0;
     font-family: "Barlow Semi Condensed", sans-serif;
+    text-decoration: none;
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background: #f0f4f8;
+    background: #7776B3;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     flex-direction: column;
     margin: 0;
+
   }
   
-  .grid-container {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 200px;
-    /* max-width: 1200px; */
-    padding: 20px;
-    justify-content: center;
-    /* border: 2px solid red; */
-    height: 88vh;
-  }
+main {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
   
   .box {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 10px 0;
+  }
+
+ .content h5{
+  line-height: 22px;
+    font-size: 18px;
+   margin-bottom: 1.1rem !important;
+   font-weight: 600;
   }
   
-  .a {
-    grid-column: span 2;
-    height: 210px;
-    /* border: 2px solid red; */
-  }
-  
-  .b {
-    grid-column: span 1;
-    height: 210px;
-    /* border: 2px solid rgb(89, 255, 0); */
-  }
-  
-  .c {
-    grid-column: span 1;
-    /* border: 2px solid red; */
-    position: relative;
-    top: -270px;
-    height: 210px;
-  }
-  
-  .d {
-    grid-column: span 2;
-    height: 210px;
-    /* border: 2px solid rgb(0, 38, 255); */
-    position: relative;
-    top: -270px;
-  }
-  
-  .e {
-    grid-column: span 1;
-  }
-  
+/* BOXES DIV */
+.a {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 96%);
+}
+
+.a,
+.d {
+  width: 35vw;
+}
+
+.d {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 75%);
+}
+
+.b,
+.c,
+.e {
+ width: 20vw; 
+}
+
+.b {
+  background-color: hsl(218, 20%, 35%);
+  color: hsl(0, 0%, 75%);
+}
+
+.e {
+  color: hsl(218, 20%, 35%);
+}
+
+.f,
+.h {
+  display: flex;
+  gap: 2rem;
+}
   .profile {
     display: flex;
     align-items: center;
@@ -79,6 +87,8 @@ body {
     width: 40px;
     height: 40px;
     margin-right: 15px;
+    border: 1px solid hsl(0, 0%, 82%);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
   
   .profile h5 {
@@ -98,5 +108,34 @@ body {
   footer {
     margin-top: 50px;
     text-align: center;
+    color: hsl(218, 20%, 35%);
+  }
+
+  footer a {
+    color: hsl(128, 86%, 28%);
+  }
+
+  @media only screen and (max-width: 800px) {
+    .f,
+    .h {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    main {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap:1rem;
+    }
+    .a,
+    .b,
+    .c,
+    .d,
+    .e {
+      width: 70vw;
+    }
+    
   }
   
