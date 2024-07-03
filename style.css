@@ -109,7 +109,7 @@ main {
     margin-top: 20px;
     text-align: center;
     color: hsl(218, 20%, 35%);
-    padding: 1rem;
+    padding: 0 1rem;
   }
 
   footer a {
